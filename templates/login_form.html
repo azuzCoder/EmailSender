@@ -1,0 +1,14 @@
+{% load static %}
+      <form action="" method="POST">{% csrf_token %}
+        <div class="form">
+          <img src="{% static 'images/username.svg' %}" width="12px">
+          <input type="email" name="username" placeholder="Gmail">
+        </div>  
+        <br>
+        <div class="form">
+          <img src="{% static 'images/password.svg' %}" width="12px">
+          <input type="password" name="password" placeholder="Google App Password">
+        </div>  
+        <br>
+        <button type="submit">GET STARTED</button>
+      </form>
